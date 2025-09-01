@@ -7,7 +7,7 @@ export default function UserDetail(props: UserDetailProps) {
 
   return (
     <li className="flex items-center gap-[10px]">
-      <div className="w-[16px] h-[16px] rounded-full bg-[#0587FF]"></div>
+      <div className="w-[16px] h-[16px] rounded-full bg-[#0587FF]" />
       <span className="text-sm text-[#0587FF]">{children}</span>
     </li>
   );

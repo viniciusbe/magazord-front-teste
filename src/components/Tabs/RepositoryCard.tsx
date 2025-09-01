@@ -9,14 +9,9 @@ interface RepositoryCardProps {
   branches: number;
 }
 
-export default function RepositoryCard({
-  owner,
-  name,
-  link,
-  description,
-  stars,
-  branches,
-}: RepositoryCardProps) {
+export default function RepositoryCard(props: RepositoryCardProps) {
+  const { owner, name, link, description, stars, branches } = props;
+
   return (
     <div className="flex flex-col gap-2">
       <div className="flex items-center gap-1 text-lg font-light">

@@ -7,8 +7,11 @@ import tailwindcss from "@tailwindcss/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { resolve } from "path";
 
+import { devtools } from "@tanstack/devtools-vite";
+
 export default defineConfig({
   plugins: [
+    devtools(),
     tanstackRouter({ autoCodeSplitting: true }),
     viteReact(),
     tailwindcss(),
